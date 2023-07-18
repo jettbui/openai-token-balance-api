@@ -79,7 +79,6 @@ You can set a user's balance with either a `PATCH` request to `/api/balance/{use
 1. Start by setting the user's balance to 30:
 
 ```json
-// PATCH /balance/{user_id}
 {
     "balance": 30
 }
@@ -93,7 +92,6 @@ The project is setup with practical routes for interacting with OpenAI's API (ma
 2. Make a `POST` request to `/api/openai/chat/completions` with the following content:
 
 ```json
-// POST /api/openai/chat/completions
 {
   "model": "gpt-3.5-turbo",
   "messages": [

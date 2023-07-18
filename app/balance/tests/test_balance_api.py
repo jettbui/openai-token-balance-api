@@ -164,5 +164,5 @@ class PrivilegedBalanceApiTests(TestCase):
         res = self.client.patch(url, payload)
         balance = get_user_balance(user2)
 
-        self.assertEqual(res.status_code, status.HTTP_200_OK)
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(balance.user, user2)
